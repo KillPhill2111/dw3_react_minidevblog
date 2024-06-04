@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import { db } from '../firebase/config'
 import { doc, getDoc } from 'firebase/firestore'
 
-export const useFetchDocumetn =(docColeection, id)=>{
+export const userFetchDocumetn =(docColeection, id)=>{
     const [document, setDocument] =useState(null)
     const [error, setError]=useState(null)
     const [loading, setLoading] =useState(null)
